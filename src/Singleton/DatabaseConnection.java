@@ -62,7 +62,7 @@ public class DatabaseConnection implements HoopifySubject {
     private DatabaseConnection() {
         String url = "jdbc:postgresql://localhost:5432/postgres";
         String username = "postgres";
-        String password = "823252";
+        String password = "Nursat12#";
 
         try {
             conn = DriverManager.getConnection(url, username, password);
