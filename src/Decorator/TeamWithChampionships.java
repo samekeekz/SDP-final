@@ -9,7 +9,6 @@ public class TeamWithChampionships extends TeamDecorator {
         super(wrappedTeam);
         this.championships = championships;
     }
-
     @Override
     public String toString() {
         return super.toString() + "Championships: " + championships + '\n';

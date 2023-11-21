@@ -124,12 +124,12 @@ public class DatabaseConnection implements HoopifySubject {
 
     public List<String> getCoachesForTeam(String teamName) {
         List<String> coaches = new ArrayList<>();
-        try (PreparedStatement stmt = conn.prepareStatement("SELECT coach_name FROM teams WHERE team_name = ?")) {
+        try (PreparedStatement stmt = conn.prepareStatement("SELECT coache_name FROM teams WHERE team_name = ?")) {
             stmt.setString(1, teamName);
             ResultSet rs = stmt.executeQuery();
 
             while (rs.next()) {
-                String coachName = rs.getString("coach_name");
+                String coachName = rs.getString("coache_name");
                 coaches.add(coachName);
             }
         } catch (SQLException e) {
@@ -144,7 +144,7 @@ public class DatabaseConnection implements HoopifySubject {
         try (Statement stmt = conn.createStatement()) {
             TeamFactory teamFactory = new TeamFactory();
             Team team  = teamFactory.createTeam( teamName, 0 );
-            String insertTeamSQL = "INSERT INTO teams (team_name, coach_name, awards) VALUES ('" + teamName + "', '" + coachName + "', 0)";
+            String insertTeamSQL = "INSERT INTO teams (team_name, coache_name) VALUES ('" + teamName + "', '" + coachName + "')";
             stmt.executeUpdate(insertTeamSQL);
 
             notifyObservers();

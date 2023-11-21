@@ -6,5 +6,5 @@
 package Observer;
 
 public interface HoopifySubject {
-    void addObserver(HoopifyObserver var1);
+    void addObserver(HoopifyObserver observer);
 }
