@@ -3,7 +3,7 @@ Final Project – Belentbay Samat, Abildinova Alua, SE-2206, SE-2205
 
 Project overview
 Main idea:
-The main idea of the project is to create an informational system for tracking the stats and history of some players. In the project, different software design patterns were implemented in order to obtain practical knowledge from course “Software design patterns”.
+The main idea of the project is to create an informational system for tracking the stats and history of some players. In the project, different software design patterns were implemented in order to obtain practical knowledge from course “Software Design Patterns”.
 
 Aim:
 Our overarching aim is to effectively implement diverse software design patterns within the project framework, assessing their functionality and collective efficacy in enhancing the overall system. This endeavor not only underscores the application of theoretical knowledge acquired during the course but also underscores a commitment to cultivating a nuanced understanding of the practical implications of these design patterns in real-world scenarios.
